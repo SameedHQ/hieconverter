@@ -12,6 +12,7 @@ public class FHIRRestfulServerDCM extends RestfulServer {
     protected void initialize() throws ServletException {
         setFhirContext(FhirContext.forR4());
         List<IResourceProvider> resourceProviders = new ArrayList<IResourceProvider>();
+        //all resources will be add here
         setResourceProviders(resourceProviders);
     }
 }
